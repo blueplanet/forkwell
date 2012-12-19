@@ -31,7 +31,7 @@ gem 'kaminari'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the app server
+# Use unicorn as therubyracere app server
 # gem 'unicorn'
 
 # Deploy with Capistrano
@@ -40,8 +40,11 @@ gem 'kaminari'
 # To use debugger
 # gem 'debugger'
 
-group :test do
+group :development, :test do
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'capybara'
   gem 'rr'
 end
